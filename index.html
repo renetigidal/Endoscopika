@@ -49,7 +49,7 @@ Brindamos la mejor atención para tu salud digestiva">
             font-size: 2rem;
             font-weight: bold;
             background: linear-gradient(45deg, #fff, #a8d8ff);
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 0 30px rgba(255,255,255,0.5);
         }
@@ -75,7 +75,7 @@ Brindamos la mejor atención para tu salud digestiva">
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(0deg, #3db096, #98e5d5);
+            background: linear-gradient(400deg, #3db096, #98e5d5);
             color: white;
             text-align: center;
             padding: 150px 0 100px;
@@ -90,7 +90,7 @@ Brindamos la mejor atención para tu salud digestiva">
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="lightblue" stop-opacity="0.3"/><stop offset="30%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="100" fill="url(%23a)"/><circle cx="50" cy="50" r="200" fill="url(%23a)"/><circle cx="50" cy="50" r="120" fill="url(%23a)"/></svg>');
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="darkblue" stop-opacity="0.3"/><stop offset="30%" stop-color="lightskyblue" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="100" fill="url(%23a)"/><circle cx="50" cy="50" r="200" fill="url(%23a)"/><circle cx="50" cy="50" r="120" fill="url(%23a)"/></svg>');
             animation: float 20s infinite linear;
         }
 
@@ -292,6 +292,25 @@ Brindamos la mejor atención para tu salud digestiva">
             transition: all 0.3s ease;
         }
 
+        .contact-item span:first-child {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        .contact-item span:first-child img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .contact-item span:last-child {
+            flex: 1;
+        }
         .contact-item:hover {
             background: rgba(255,255,255,0.2);
             transform: translateX(10px);
@@ -429,13 +448,13 @@ Brindamos la mejor atención para tu salud digestiva">
                 </div>
                 <div class="service-card fade-in">
                     <div class="service-icon">🩺</div>
-                    <h3>Chronic Gastritis Care</h3>
-                    <p>Specialized management of chronic gastritis with targeted treatment plans and ongoing monitoring for optimal outcomes.</p>
+                    <h3>Balón intragástrico para manejo de obesidad</h3>
+                    <p>El balon intragastrico es...</p>
                 </div>
                 <div class="service-card fade-in">
                     <div class="service-icon">📋</div>
-                    <h3>Preventive Consultation</h3>
-                    <p>Comprehensive gastric health assessments and preventive care recommendations tailored to individual risk factors.</p>
+                    <h3>Manga Gastrica Endoscópica</h3>
+                    <p>info.</p>
                 </div>
             </div>
         </div>
@@ -445,10 +464,10 @@ Brindamos la mejor atención para tu salud digestiva">
         <div class="container">
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <h2>Excellence in Gastric Care</h2>
-                    <p>At Endoscopika, we specialize in advanced gastric endoscopy procedures, combining cutting-edge technology with compassionate patient care. Our clinic is dedicated to providing comprehensive diagnostic and therapeutic services for all gastric conditions.</p>
-                    <p>Our team of experienced gastroenterologists uses state-of-the-art endoscopic equipment to ensure accurate diagnoses and effective treatments. We prioritize patient comfort and safety while maintaining the highest standards of medical excellence.</p>
-                    <p>From routine screenings to complex therapeutic interventions, we offer personalized care plans tailored to each patient's unique needs and medical history.</p>
+                    <h2>Excelencia en el cuidado gastrico</h2>
+                    <p>En Endoscopika, nos especializamos en servicios de endoscopia gastrica avanzada, combinando tecnología de punta con profesionales interesados en tu bienestar. Nuestra clinica se dedica a proveer diagnosticos integrales y procedimientos medicos para todas las condiciones gastricas</p>
+                    <p>Nuestro equipo de gastroenterologos utiliza equipo endoscopico de primer nivel para asegurar diagnosticos precisos y tratamientos efectivos. nuestra prioridad es la comodidad y seguridad de nuestros pacientesal proveer los mas altos estandares de excelencia medica.</p>
+                    <p>Desde examenes de rutina hasta intervensiones terapeuticas coplejas, ofrecemos planes de salud personalizados para las necesidades de cada uno de nuestros pacientes.</p>
                 </div>
                 <div class="about-image fade-in">
                     <img src="Media/gastric.jpg" alt="imagen" width="80%">
@@ -459,16 +478,16 @@ Brindamos la mejor atención para tu salud digestiva">
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Contact Us</h2>
+            <h2 class="section-title" style="color: white;">Contactanos</h2>
             <div class="contact-content">
                 <div class="contact-info fade-in">
-                    <h3>Get In Touch</h3>
+                    <h3>Información de contacto</h3>
                     <div class="contact-item">
                         <span style="margin-right: 1rem; font-size: 1.2rem;">📍</span>
                         <span>123 Medical Center Drive<br>Healthcare District, City 12345</span>
                     </div>
                     <div class="contact-item">
-                        <span style="margin-right: 1rem; font-size: 1.2rem;">📞</span>
+                        <span style="margin-right: 1rem; font-size: 1.2rem;"><img src="Media/whatsapp-svgrepo-com.svg" alt="Whatsapp logo" width="5%"></span>
                         <span>(555) 123-ENDO (3636)</span>
                     </div>
                     <div class="contact-item">
@@ -477,24 +496,24 @@ Brindamos la mejor atención para tu salud digestiva">
                     </div>
                     <div class="contact-item">
                         <span style="margin-right: 1rem; font-size: 1.2rem;">🕒</span>
-                        <span>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</span>
+                        <span>Lun-Vie: 8:00 AM - 6:00 PM<br>Sab: 9:00 AM - 2:00 PM</span>
                     </div>
                 </div>
                 <form class="contact-form fade-in">
-                    <h3 style="margin-bottom: 1.5rem;">Schedule Your Appointment</h3>
+                    <h3 style="margin-bottom: 1.5rem;">Agenda tu cita</h3>
                     <div class="form-group">
-                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Nombre completo" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email Address" required>
+                        <input type="email" placeholder="Correo Electronico" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="tel" placeholder="Numero de telefono" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Message or preferred appointment time" required></textarea>
+                        <textarea placeholder="Mensaje, fecha y hora de la cita" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">Enviar mensaje</button>
                 </form>
             </div>
         </div>
